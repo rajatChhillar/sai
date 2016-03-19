@@ -27,14 +27,20 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-        files: ['<%= jshint.files %>'],
-        tasks: ['jshint', 'qunit']
+        options: {
+            spawn: false,
+            livereload: true
+        },
+        css: {
+            files: '**/*.scss',
+            tasks: ['build']
+        }
       },
     connect: {
       server: {
         options: {
           port: 8000,
-          keepalive: true,
+          livereload: true,
           open: {
             target: 'http://localhost:8000/index.html'
             }
@@ -47,6 +53,7 @@ module.exports = function(grunt) {
         options: {              // Target options 
           sassDir: 'sass',
           cssDir: 'css',
+          specify: 'sass/style.scss',
           environment: 'production'
         }
       },
@@ -72,6 +79,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', ['clean', 'compass:dist']);
 
-  grunt.registerTask('default', ['connect']);
+  grunt.registerTask('default', ['build','connect','watch']);
 
 };

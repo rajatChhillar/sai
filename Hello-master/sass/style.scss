@@ -1,17 +1,13 @@
-// Core variables and mixins
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+//bootstrap files
+@import "common/_bootstrap.scss";
 
-// Reset and dependencies
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+//common files
+@import "common/_reset.scss";
+@import "common/_variables.scss";
+@import "themes/theme1.scss";
+@import "common/_fonts.scss";
+@import "common/_initialize.scss";
+@import "common/_mixins.scss";
 
-// Core CSS
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+// Page specific files
+@import "login.scss";
