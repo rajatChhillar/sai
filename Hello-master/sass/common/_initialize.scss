@@ -20,6 +20,11 @@
 		@content;
 	}
 }
+@mixin desktop-and-above {
+	@media only screen and (min-width : $screen-tablet + 1) {
+		@content;
+	}
+}
 /*Body
 =============================================================================*/
 body {
@@ -35,6 +40,7 @@ figure, figcaption, footer, header,
 menu,nav, output, section, summary,
 time, mark, audio, video,canvas, button{
     font-family: $body-font-family, $body-secondary-font;
+    color:$body-color;
 }
 /*H1 Tag
 =============================================================================*/
@@ -43,10 +49,17 @@ h1 {
     text-transform: uppercase;
     font-size: $h1-font-size;
 }
+/*H2 Tag
+=============================================================================*/
+h2 {
+    color: $h1-color;
+    text-transform: uppercase;
+    font-size: $h2-font-size;
+}
 /*Anchor Tag
 =============================================================================*/
 a{ 
-    
+   color:$link-color; 
 }
 /*Button Tag
 =============================================================================*/
@@ -59,7 +72,14 @@ a{
 /*Form Field
 =============================================================================*/
 .form-control {
-    width: auto;
+	margin-top:27px;
+	margin-bottom:27px;
     height: auto;
     box-shadow: none;
+}
+/*container
+=============================================================================*/
+.container {
+	background-color: $main-bg-color;
+	min-height:100vh;
 }

@@ -1,11 +1,18 @@
 //theme-blue
-$background-color:#275482;
+$background-color:#9fa8a3;
 $input-box-color:#3b6897;
 $light-blue-color:#129fdd;
 $dark-blue-color:#3171b5;
 $grey-color:#d4d4d4;
 $white-color:#fff;
+$main-color:#c0dfd9;
+$peach-color:#a9ccb6;
 
+//braekpoints variables
+
+$screen-phone:480px;
+$screen-tablet:767px;
+$screen-desktop:924px;
 
 //fonts
 $black-font: url("../../fonts/sourcesanspro/SourceSansPro-Black.ttf");
@@ -25,12 +32,12 @@ $body-font-size: 16px;
 $body-font-style: normal;
 $body-font-family: Light;
 $body-secondary-font: Arial;
-$h1-font-size: 4em;
-$h2-font-size: 2.5em;
-$h3-font-size: 2em;
-$h4-font-size: 1.7em;
-$h5-font-size: 1.33em;
-$h6-font-size: 1.17em;
+$h1-font-size: 4rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.7rem;
+$h5-font-size: 1.33rem;
+$h6-font-size: 1.17rem;
 
 //header
 $header-background:#1c3957;

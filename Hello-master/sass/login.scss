@@ -1,0 +1,39 @@
+.login{
+	.col-right{
+	}
+	h1{
+		font-weight: bolder;
+		text-align: center;
+	}
+	form{
+		.btn{
+			width:100%;
+			font-size: $h5-font-size;
+			margin-bottom: 30px;
+		}
+		.checkbox{
+			@include clearfix();
+		}
+		a{
+			float:right;
+		}
+		.left-hr,
+		.right-hr{
+			width:45%;
+			display:inline-block;
+			margin-top: 10%;
+		}
+
+	}
+}
+
+@include desktop-and-above{
+	.login{
+		.col-left{
+			margin-top:20%;
+		}
+		.col-right{
+			margin-top:18%;
+		}
+	}
+}
