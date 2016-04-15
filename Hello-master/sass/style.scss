@@ -4,10 +4,10 @@
 //common files
 @import "common/_reset.scss";
 @import "common/_variables.scss";
-@import "themes/theme1.scss";
 @import "common/_fonts.scss";
 @import "common/_initialize.scss";
 @import "common/_mixins.scss";
+@import "themes/theme1.scss";
 
 // Page specific files
 @import "login.scss";

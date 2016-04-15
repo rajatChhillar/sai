@@ -28,9 +28,8 @@
 /*Body
 =============================================================================*/
 body {
-    font-size: $body-font-size;
     font-style: $body-font-style;
-    background-color: $bg-color;
+    background-color:$container-color;
 }
 body, input, span, label, select ,h1, h2, h3, h4, h5, h6, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -40,31 +39,36 @@ figure, figcaption, footer, header,
 menu,nav, output, section, summary,
 time, mark, audio, video,canvas, button{
     font-family: $body-font-family, $body-secondary-font;
-    color:$body-color;
 }
 /*H1 Tag
 =============================================================================*/
 h1 {
-    color: $h1-color;
+    color: $white-color;
     text-transform: uppercase;
     font-size: $h1-font-size;
+    margin:10px 0;
+}
+/*header Tag
+=============================================================================*/
+header {
+    color: $white-color;
+    background-color:$header-color;    
 }
 /*H2 Tag
 =============================================================================*/
 h2 {
-    color: $h1-color;
     text-transform: uppercase;
     font-size: $h2-font-size;
 }
 /*Anchor Tag
 =============================================================================*/
 a{ 
-   color:$link-color; 
+	color:$light-blue-color; 
 }
 /*Button Tag
 =============================================================================*/
 .btn-primary{
-	background-color:$btn-primary-bg;
+	background-color:$dark-blue-color;
     text-transform: uppercase;
     min-width: 104px;
 }
@@ -80,6 +84,5 @@ a{
 /*container
 =============================================================================*/
 .container {
-	background-color: $main-bg-color;
 	min-height:100vh;
 }

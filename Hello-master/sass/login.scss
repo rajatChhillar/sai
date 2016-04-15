@@ -1,39 +1,57 @@
-.login{
-	.col-right{
-	}
-	h1{
-		font-weight: bolder;
-		text-align: center;
+.index{
+	header{
+		@include clearfix();
+		h1{
+			display:inline-block;
+		}
+		span{
+			font-size: 2em;
+			float:right;
+			margin-top: 20px;
+			cursor: pointer;
+			&:hover{
+				background-color: lightgray;
+				color: black;
+			}
+		}
+		.menu{
+			position:absolute;
+			background-color:rgba(0,0,0,0.7);
+			z-index: 1000000;
+			right: 0;
+			width: 100%;
+			ul{
+				text-align: center;
+				li{
+					padding:10px 0;
+					border-bottom:0.4px solid gray;
+					cursor:pointer;
+					&:hover{
+						background-color:rgba(0,0,0,0.1);
+					}
+					a{
+						color:#fff;
+						text-decoration:none;
+					}
+				}
+			}
+		}
 	}
 	form{
+		margin-top: 10%;
+		padding:15px;
+		background-color: lightgray;
+		border-radius: 10px;
+		h2{
+			text-align:center;
+		}
 		.btn{
 			width:100%;
-			font-size: $h5-font-size;
-			margin-bottom: 30px;
+			text-transform: uppercase;
 		}
-		.checkbox{
-			@include clearfix();
-		}
-		a{
-			float:right;
-		}
-		.left-hr,
-		.right-hr{
-			width:45%;
-			display:inline-block;
-			margin-top: 10%;
-		}
-
-	}
-}
-
-@include desktop-and-above{
-	.login{
-		.col-left{
-			margin-top:20%;
-		}
-		.col-right{
-			margin-top:18%;
+		.or{
+			text-align:center;
+			margin:10px 0;
 		}
 	}
 }

@@ -1,8 +1,18 @@
-$h1-color: $white-color;
-$body-color: $white-color;
-$link-color: $background-color;
-$btn-primary-bg: $dark-blue-color;
-$bg-color: $background-color;
-$header-bg-color: $header-background;
-$main-bg-color: $main-color;
-$form-background: $peach-color;
+html{
+	font-size:12px;
+	@include tablet-only{
+		font-size:14px;
+	}
+	@include desktop-and-above{
+		font-size:16px;
+	}
+}
+header{
+	font-size:1.5rem;
+}
+footer{
+	font-size:0.75rem;
+}
+main,section{
+	font-size:1rem;
+}
